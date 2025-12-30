@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 to 2026 With My Janu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef, #a8edea, #fed6e3);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 2.5em; color: #d32f2f; margin-bottom: 10px; }
+        h2 { font-size: 1.5em; color: #1976d2; margin-bottom: 20px; }
+        .stickers { display: flex; justify-content: center; gap: 20px; margin: 20px 0; }
+        .sticker { width: 100px; height: 100px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; cursor: pointer; transition: transform 0.5s; position: relative; }
+        .sticker.peeled { transform: translateY(200px); opacity: 0; }
+        .letter-tab { font-size: 3em; cursor: pointer; margin: 20px 0; display: none; }
+        .note { font-size: 1.2em; margin: 20px 0; display: none; }
+        .slide-option { background: #4caf50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; margin: 20px 0; display: none; }
+        .photos { position: relative; height: 400px; overflow: hidden; }
+        .photo { position: absolute; top: -100%; width: 300px; height: 300px; background: #f0f0f0; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 1s; opacity: 0; }
+        .photo.active { top: 50%; transform: translateY(-50%); opacity: 1; }
+        .photo.sliding { transform: translateX(100%); opacity: 0; }
+        .photo img { width: 100%; height: 80%; object-fit: cover; border-radius: 10px; }
+        .photo-line { margin-top: 10px; font-style: italic; opacity: 0; transition: opacity 1s; }
+        .photo-line.show { opacity: 1; }
+        .gift-text { font-size: 1.2em; margin: 20px 0; display: none; }
+        .sealed-letter { font-size: 5em; position: relative; margin: 20px 0; cursor: pointer; }
+        .seal { position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: #8b4513; color: white; padding: 5px 10px; border-radius: 50%; font-size: 0.5em; }
+        .feather { position: absolute; top: -20px; left: 60%; font-size: 2em; }
+        .love-letter { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin: 20px 0; display: none; text-align: left; }
+        .shayari-heading { font-weight: bold; margin: 10px 0; }
+        .shayari { font-style: italic; margin: 10px 0; }
+        .save-option { background: #ff5722; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; margin: 20px 0; display: none; }
+        .memory-box { width: 200px; height: 150px; background: #722f37; border: 5px solid gold; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; display: none; }
+        .thank-you { font-size: 1.5em; margin: 20px 0; display: none; }
+        .love-text { font-size: 1.2em; margin: 10px 0; display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2025 To 2026 With My Janu</h1>
+        <h2>Leaving some beside</h2>
+        
+        <div class="stickers">
+            <div class="sticker" id="sadness">Sadness</div>
+            <div class="sticker" id="stress">Stress</div>
+            <div class="sticker" id="worst-memory">Worst Memory & Day</div>
+            <div class="sticker" id="depression">Depression</div>
+        </div>
+        
+        <div class="letter-tab" id="letterTab">💌</div>
+        <div class="note" id="note">
+            We peel away the pain of the past, and walk into 2026 hand in hand — lighter, stronger, together.
+        </div>
+        <button class="slide-option" id="slide1">Slide to Continue</button>
+        
+        <div class="photos" id="photos">
+            <div class="photo" id="photo1">
+                <img src="https://drive.google.com/uc?export=view&id=1E5XC_tvYWqj22Lup0zdeNxzGelyZBu44" alt="Photo 1">
+                <div class="photo-line" id="line1">“This was the moment I realized — you were never just a phase, you were home.”</div>
+            </div>
+            <div class="photo" id="photo2">
+                <img src="https://drive.google.com/uc?export=view&id=1ou2Qrq_rm_9-D2IG8w28JpV-rg-Tnj0_" alt="Photo 2">
+                <div class="photo-line" id="line2">“Every smile of yours made my worst days feel lighter.”</div>
+            </div>
+            <div class="photo" id="photo3">
+                <img src="https://drive.google.com/uc?export=view&id=1mwn3KwCobyqG-YUCVlLaD9Ll6PAVcoGk" alt="Photo 3">
+                <div class="photo-line" id="line3">“Through silence, chaos, and everything in between — we stayed.”</div>
+            </div>
+            <div class="photo" id="photo4">
+                <img src="https://drive.google.com/uc?export=view&id=1ScovCpsjlFX1eqvwwAqAEM_j1YTM1cZH" alt="Photo 4">
+                <div class="photo-line" id="line4">“Not every moment was easy, but every moment with you was worth choosing.”</div>
+            </div>
+            <div class="photo" id="photo5">
+                <img src="https://drive.google.com/uc?export=view&id=13D8jrZ2nXj7O6zfzUWgGJ6A4u8ZmU4cn" alt="Photo 5">
+                <div class="photo-line" id="line5">“If 2026 asks me what I want, my answer will still be you.”</div>
+            </div>
+        </div>
+        
+        <div class="gift-text" id="giftText">
+            First Gift with all My Emotions and Feeling for you My Januuuu 🥰💝🫶
+        </div>
+        <button class="slide-option" id="slide2">Slide to Continue</button>
+        
+        <div class="sealed-letter" id="sealedLetter">
+            💌
+            <div class="seal">LOVE</div>
+            <div class="feather">🪶</div>
+        </div>
+        
+        <div class="love-letter" id="loveLetter">
+            To My Janu 🤍✨,<br><br>
+            2025 ne humein bohot kuch sikhaya — thoda dard, thodi khamoshi, aur bohot saara sabr.<br>
+            Par har toote hue pal ke baad, main tumhe hi chunta raha.<br>
+            Tum mere liye sirf pyaar nahi, meri shaanti ho.<br>
+            Agar duniya heavy ho jaaye, toh tumhara saath hi kaafi lagta hai.<br>
+            2026 mein main promises nahi, sirf apna haath tumhare haath mein deta hoon.<br>
+            Bas itna hi — saath chalna hai, har haal mein.<br><br>
+            <div class="shayari-heading">Pesh krtaa huu apke liyee iss Nacheez ki trf se chotuuu sii Shayari</div><br>
+            <div class="shayari">
+                Waqt ne humein kayi baar aazmaya,<br>
+                Kuch sapne toote, kuch dard bhi aaya,<br>
+                Par har andhere ke baad ek baat samajh aayi,<br>
+                Meri har subah, har manzil — tum hi paayi 💌😘✨
+            </div>
+        </div>
+        
+        <button class="save-option" id="saveOption">
+            Let's save this moments in a Memory Saver and Enter in 2026 with You & Me, My Januu 🥰💝
+        </button>
+        
+        <div class="memory-box" id="memoryBox">
+            Memory Saver
+        </div>
+        
+        <div class="thank-you" id="thankYou">
+            Thankyouuu for yourrr Timeee Sweettt Heart
+        </div>
+        
+        <div class="love-text" id="loveText">
+            I Loveeeee Youuuuuu Mineee Januuuu😘🫶✨
+        </div>
+    </div>
+
+    <script>
+        const stickers = document.querySelectorAll('.sticker');
+        stickers.forEach(sticker => {
+            sticker.addEventListener('click', () => {
+                sticker.classList.add('peeled');
+                setTimeout(() => {
+                    sticker.style.display = 'none';
+                    if (document.querySelectorAll('.sticker:not(.peeled)').length === 0) {
+                        document.getElementById('letterTab').style.display = 'block';
+                    }
+                }, 500);
+            });
+        });
+
+        document.getElementById('letterTab').addEventListener('click', () => {
+            document.getElementById('note').style.display = 'block';
+            document.getElementById('slide1').style.display = 'block';
+        });
+
+        document.getElementById('slide1').addEventListener('click', () => {
+            document.getElementById('photos').style.display = 'block';
+            const photos = document.querySelectorAll('.photo');
+            photos.forEach((photo, index) => {
+                setTimeout(() => {
+                    photo.classList.add('active');
+                    setTimeout(() => {
+                        document.getElementById(`line${index + 1}`).classList.add('show');
+                        setTimeout(() => {
+                            photo.classList.add('sliding');
+                            if (index === 4) {
+                                document.getElementById('giftText').style.display = 'block';
+                                document.getElementById('slide2').style.display = 'block';
+                            }
+                        }, 2000);
+                    }, 1000);
+                }, index * 3000);
+            });
+        });
+
+        document.getElementById('slide2').addEventListener('click', () => {
+            document.getElementById('sealedLetter').style.display = 'block';
+            document.getElementById('sealedLetter').addEventListener('click', () => {
+                document.getElementById('loveLetter').style.display = 'block';
+                document.getElementById('saveOption').style.display = 'block';
+            });
+        });
+
+        document.getElementById('saveOption').addEventListener('click', () => {
+            document.getElementById('loveLetter').style.display = 'none';
+            document.getElementById('memoryBox').style.display = 'flex';
+            document.getElementById('thankYou').style.display = 'block';
+            document.getElementById('loveText').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
